@@ -1,0 +1,107 @@
+{
+  "id": "neo.chest-filer",
+  "name": "チェスト・ファイラー",
+  "version": "0.2.0",
+  "apiVersion": 1,
+  "entry": "index.js",
+  "uses": [
+    "entries",
+    "size",
+    "modified",
+    "icons",
+    "thumbnails",
+    "links",
+    "search",
+    "pointerLock"
+  ],
+  "location": "folder",
+  "description": "チェストがフォルダーのファイラー。マイクラのようなワールドを歩いて、チェストを開き、ファイルを入れて整理します。チェストは仮想のフォルダーで、入れても本物のファイルは動きません。名前の変更は、メニューで選んだときだけ。通信はしません",
+  "settings": [
+    {
+      "key": "slotSize",
+      "label": "スロットの大きさ",
+      "type": "number",
+      "default": 44,
+      "min": 32,
+      "max": 64,
+      "step": 2
+    },
+    {
+      "key": "iconStyle",
+      "label": "ファイルの絵",
+      "type": "choice",
+      "default": "windows",
+      "options": [
+        {
+          "value": "windows",
+          "label": "Windows のアイコンと縮小画像"
+        },
+        {
+          "value": "block",
+          "label": "ブロック風の絵"
+        }
+      ]
+    },
+    {
+      "key": "sound",
+      "label": "効果音",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "sky",
+      "label": "空",
+      "type": "choice",
+      "default": "auto",
+      "options": [
+        {
+          "value": "auto",
+          "label": "テーマに合わせる"
+        },
+        {
+          "value": "day",
+          "label": "昼"
+        },
+        {
+          "value": "sunset",
+          "label": "夕方"
+        },
+        {
+          "value": "night",
+          "label": "夜"
+        }
+      ]
+    },
+    {
+      "key": "fov",
+      "label": "視野の広さ",
+      "type": "number",
+      "default": 75,
+      "min": 60,
+      "max": 105,
+      "step": 1
+    },
+    {
+      "key": "quality",
+      "label": "画質",
+      "type": "choice",
+      "default": "high",
+      "options": [
+        {
+          "value": "high",
+          "label": "きれい"
+        },
+        {
+          "value": "light",
+          "label": "かるい"
+        }
+      ]
+    },
+    {
+      "key": "lights",
+      "label": "俯瞰の部屋の松明",
+      "type": "boolean",
+      "default": true
+    }
+  ]
+}
